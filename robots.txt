@@ -1,0 +1,4 @@
+Sitemap: link til domæne 
+
+User-agent: Google-Extended
+Disallow: /
