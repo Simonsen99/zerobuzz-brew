@@ -12,7 +12,7 @@ body
 
 /*Styling af nav-bar med grid*/
 #navbar {
-    background-color: blue; /* Definerer baggrundsfarven på selve nav-baren*/
+    background-color: #244436; /* Definerer baggrundsfarven på selve nav-baren*/
 }
 
 
@@ -24,7 +24,7 @@ body
 
 #navbar ul li{ /*Teksten på menupunkterne*/
     text-align: center;
-    color: white;
+    color: blue;
     font-size: 1rem;
     font-weight: bold;
     padding: 1rem;
@@ -32,7 +32,7 @@ body
 }
 
 #navbar ul li a{ /* Farven på selve teksten på menupunkterne*/
-    color: aqua;
+    color: #EEEFE9;
     text-decoration: none;
 }
 
