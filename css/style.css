@@ -110,6 +110,7 @@ body
     height: 20em;
 }
 
+/*Styling af h1*/
 .indhold {
     width: 100%;
     position: absolute;
@@ -126,6 +127,7 @@ body
     text-transform: uppercase;
 }
 
+/* Styling af knap*/
 button {
     width: 200px;
     padding: 15px;
@@ -138,7 +140,7 @@ button {
     cursor: pointer;
     font-weight: 600;
 }
-/* Styling af knap*/
+
 button {
     background-color: #244436;
     color: #eeefe9;
@@ -274,6 +276,8 @@ footer .footer p{
 .kontaktInfo a:hover {
     color: #FAC85C;
 }
+
+
 /* Media Queries*/
 @media(min-aspect-ratio: 16/9){
     .banner video{
