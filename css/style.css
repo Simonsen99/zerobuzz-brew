@@ -10,6 +10,29 @@ body
     background-color: #EEEFE9;
 }
 
+.top {
+    background: #244436;
+    padding: 20px 0;
+}
+
+.top li {
+    margin-right: 15px;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 159px;
+}
+
+.top li a{
+    color: #EEEFE9;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: .3s;
+    display: block;
+}
+
+
 /*Styling af nav-bar med grid*/
 #navbar {
     background-color: #244436; /* Definerer baggrundsfarven på selve nav-baren*/
@@ -19,7 +42,8 @@ body
 #navbar ul{ /* Det er rækken med menupunkterne*/ 
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
+    
 }
 
 #navbar ul li{ /*Teksten på menupunkterne*/
@@ -29,6 +53,7 @@ body
     font-weight: bold;
     padding: 1rem;
     position: relative;
+    text-transform: uppercase;
 }
 
 #navbar ul li a{ /* Farven på selve teksten på menupunkterne*/
@@ -42,12 +67,12 @@ body
 
 #navbar ul li:hover{ /* Når man kører musen hen over teksten i nav-bar*/
     cursor: pointer;
-    background-color: red;
-    color: white;
+    background-color: #EEEFE9;
+    color: #244436;
 }
 
 #navbar ul li:hover a { /* Angiver farven når man kører musen hen over teksten i nav-bar*/
-    color: white;
+    color: #244436;
 }
 
 #navbar  ul li:hover ul { /* styling af selve drop-down menu*/
@@ -61,17 +86,18 @@ body
 #navbar ul li:hover ul li { /* Styling og angivelse af baggrundsfarvefarve i drop-down*/
     display: grid;
     grid-template-columns: 5fr 1fr;
-    background-color: green;
+    background-color: #244436;
     align-items: center;
 }
 
 #navbar ul li:hover ul li a { /* Angiver farven på tekten i drop-down*/
     text-align: left;
-    color: white;
+    color: #244436
 }
 
 #navbar ul li:hover ul li:hover {
-    background-color: #4267b2;
+    background-color: #EEEFE9;
+    
 }
 
 /* Styling af footer*/
