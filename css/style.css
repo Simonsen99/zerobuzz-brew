@@ -123,6 +123,7 @@ body
     margin-top: 80px;
     font-size: 90px;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 button {
@@ -137,16 +138,17 @@ button {
     cursor: pointer;
     font-weight: 600;
 }
-
-button:hover {
-    background: #EEEFE9;
-    transition: 0.5s;
+/* Styling af knap*/
+button {
+    background-color: #244436;
+    color: #eeefe9;
 }
 
 button:hover {
+    background-color: #eeefe9;
     color: #244436;
 }
-
+/* Styling af video*/
 .banner video{
     position: absolute;
     right: 0;
@@ -272,7 +274,7 @@ footer .footer p{
 .kontaktInfo a:hover {
     color: #FAC85C;
 }
-
+/* Media Queries*/
 @media(min-aspect-ratio: 16/9){
     .banner video{
         width: 100%;
