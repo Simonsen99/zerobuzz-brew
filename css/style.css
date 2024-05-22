@@ -10,152 +10,105 @@ body
     background-color: #EEEFE9;
 }
 
-.top {
-    background: #244436;
-    padding: 20px 0;
+.inner_main_menu {
+    margin: 0 auto;
+    width: 1170px;
 }
 
-.top li {
-    margin-right: 15px;
-    display: flex;
-    justify-content: right;
+.inner_main_menu ul {
+    margin: 0;
+    padding: 80px;
     list-style: none;
-    margin-right: 159px;
+    text-align: right;
 }
 
-.top li a{
-    color: #EEEFE9;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: .3s;
-    display: block;
-}
-
-
-/*Styling af nav-bar med grid*/
-#navbar {
-    background-color: #244436; /* Definerer baggrundsfarven på selve nav-baren*/
-}
-
-
-#navbar ul{ /* Det er rækken med menupunkterne*/ 
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    
-}
-
-#navbar ul li{ /*Teksten på menupunkterne*/
-    text-align: center;
-    color: blue;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1rem;
+.inner_main_menu ul li {
+    float: none;
+    display: inline-block;
     position: relative;
-    text-transform: uppercase;
 }
 
-#navbar ul li a{ /* Farven på selve teksten på menupunkterne*/
+.inner_main_menu ul li:nth-child(1) {
+    float: left;
+}
+
+.inner_main_menu ul li:nth-child(2) {
+    float: left;
+}
+
+.inner_main_menu ul li:nth-child(3) {
+    float: left;
+}
+
+.inner_main_menu ul li a {
     color: #EEEFE9;
+    font-size: 20px;
+    text-transform: uppercase;
     text-decoration: none;
+    display: block;
+    padding: 10px 20px;
 }
 
-#navbar ul li ul {
+.inner_main_menu ul li a:hover {
+    cursor: pointer;
+    background-color: #EEEFE9;
+    color: #244436;
+}
+
+ ul li ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    background: #244436;;
+    padding: 0;
     display: none;
 }
-
-#navbar ul li:hover{ /* Når man kører musen hen over teksten i nav-bar*/
-    cursor: pointer;
-    background-color: #EEEFE9;
-    color: #244436;
-}
-
-#navbar ul li:hover a { /* Angiver farven når man kører musen hen over teksten i nav-bar*/
-    color: #244436;
-}
-
-#navbar  ul li:hover ul { /* styling af selve drop-down menu*/
+.inner_main_menu ul li:hover ul { 
     display: block;
     position: absolute;
-    left: 0;
+    padding: 0;
+}
+.inner_main_menu ul li ul li {
+    float: left;
     width: 100%;
-    margin-top: 1rem;
-}
-
-#navbar ul li:hover ul li { /* Styling og angivelse af baggrundsfarvefarve i drop-down*/
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    background-color: #244436;
-    align-items: center;
-}
-
-#navbar ul li:hover ul li a { /* Angiver farven på tekten i drop-down*/
     text-align: left;
-    color: #244436
 }
 
-#navbar ul li:hover ul li:hover {
+.inner_main_menu ul li ul li a {
+    color: #EEEFE9;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.inner_main_menu ul li ul li a:hover {
     background-color: #EEEFE9;
-    
+    color: #244436;
 }
 
-/* Styling af video */
-.banner video {
-    position: relative;
-    right: 0;
-    bottom: 2.5em;
-    z-index: -1;
-    opacity: 54%;
-    height: 20em;
-}
-
-/*Styling af h1*/
-.indhold {
+#main_menu {
     width: 100%;
+    position: relative;
+}
+
+nav#main_menu {
+background: #244435;
+}
+
+.logo_area {
+    width: 300px;
+    height: 300px;
     position: absolute;
-    color: black;
-    top: 45%;
-    transform: translateY(-50%);
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -150px;
     text-align: center;
 }
 
-.indhold h1 {
-    margin-top: 80px;
-    font-size: 90px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-/* Styling af knap*/
-button {
-    width: 200px;
-    padding: 15px;
-    margin: 20px 5px;
-    text-align: center;
-    border-radius: 25px;
-    color: #244436;
-    border: 2px;
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-button {
-    background-color: #244436;
-    color: #eeefe9;
-}
-
-button:hover {
-    background-color: #eeefe9;
-    color: #244436;
-}
-/* Styling af video*/
-.banner video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+img {
+width: 20rem;
+margin-left: 6rem;
 }
 
 /* Styling af footer*/
