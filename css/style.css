@@ -231,13 +231,4 @@ footer .footer p{
 }
 
 
-/* Media Queries*/
-@media(min-aspect-ratio: 16/9){
-    .banner video{
-        width: 100%;
-        height: auto;
-    }
-}
-
-
 
