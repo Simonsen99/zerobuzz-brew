@@ -5,9 +5,11 @@
     box-sizing: border-box;
 }
 
+
 body
 {
     background-color: #EEEFE9;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .inner_main_menu {
@@ -109,6 +111,43 @@ background: #244435;
 img {
 width: 20rem;
 margin-left: 6rem;
+}
+
+
+/*Styling af h1 og knap*/
+.forside {
+    text-align: center;
+}
+
+.forside h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+
+.forside a {
+    font-size: 23px;
+    color: #EEEFE9;
+    text-decoration: none;
+    border: 2px solid #244435;
+    background-color: #244435;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.forside a:hover{
+    background-color: #EEEFE9;
+    color: #244435;
+}
+
+/*Styling af video*/
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 50%;
 }
 
 /* Styling af footer*/
@@ -230,5 +269,20 @@ footer .footer p{
     color: #FAC85C;
 }
 
+
+/*Media queries*/
+@media (min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
 
 
