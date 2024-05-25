@@ -236,6 +236,111 @@ article.caption {
     flex-direction: row;
 }
 
+/*Styling af supermarkeder*/
+.supermarked-content h1 {
+    margin-left: 11.3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.supermarked-content p {
+    margin-left: 11.3%;
+    margin-bottom: 2%;
+    margin-right: 11%;
+}
+
+.supermarked-filtrer {
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/*Styling af filtrering*/
+.dropdown {
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    background: #244436;
+    color: #EEEFE9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #244436 solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.select-clicked {
+    border: 2px blue solid;
+    box-shadow: 0 0 0.8em green;
+}
+
+.select:hover {
+    background: #EEEFE9;
+    color: #244436;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #FAC85C;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: pink;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #FAC85C;
+}
+
+.active {
+    background: black;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
 /*Styling af aroma adventure*/
 .aroma-content h1 {
     margin-left: 11.3%;
@@ -364,6 +469,8 @@ article.caption {
 .dates li.inactive {
     color: #ccc;
 }
+
+
 
 /* Styling af footer*/
 footer {

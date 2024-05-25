@@ -6,7 +6,7 @@
     <title>Supermarked</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d79f8e95bd.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,15 +57,39 @@
 
 <!--Kodning af content -->
 
-<h1>Supermarkeder</h1>
+<section class="supermarked-content">
+    <h1>Supermarkeder</h1>
 
-<p> Vores øl finder du hos de fleste supermarkeder, som du i forvejen handler i.</p>
-<p> Alt lige fra Brugen, Rema1000, Bilka osv.</p>
+    <p> Vores øl finder du hos de fleste supermarkeder, som du i forvejen handler i.</p>
+    <p> Alt lige fra Brugen, Rema1000, Bilka osv.</p>
+</section>
+
+
 
 <!--Kodning af filtrering-->
-<section class="filtrer">
+<section class="supermarked-filtrer">
     <h2>Filtrer:</h2>
 </section>
+
+<section class="dropdown">
+    <div class="select">
+        <span class="selected">Landsdel</span>
+        <div class="caret"></div>
+    </div>
+
+    <ul class="menu">
+        <li>Sjælland</li>
+        <li>Lolland/Falster</li>
+        <li>Fyn</li>
+        <li>Langeland</li>
+        <li>Nordjylland</li>
+        <li>Mindtjylland</li>
+        <li class="active">Østjylland</li>
+        <li>Synderjylland</li>
+    </ul>
+</section>
+
+
 
 <!--Kodning af billeder-->
 
@@ -112,6 +136,8 @@
         </article>
     </section>
 </footer>
-    
+
+<script src="script.js" defer></script>
+
 </body>
 </html>
