@@ -271,11 +271,12 @@ article.caption {
 }
 
 .calender {
-    margin: auto;
+    margin-left: 11.3%;
     width: 380px;
     padding: 1rem;
     background: #FAC85C;
     border-radius: 10px;
+    margin-bottom: 3%;
     
     
 }
@@ -344,7 +345,7 @@ article.caption {
 }
 
 .dates li.today {
-    color: #fff;
+    color: #EEEFE9;
 }
 
 .dates li.today::before {
@@ -355,7 +356,7 @@ article.caption {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #000;
+    background: #244436;
     border-radius: 50%;
     z-index: -1;
 }
