@@ -276,6 +276,8 @@ article.caption {
     padding: 1rem;
     background: #FAC85C;
     border-radius: 10px;
+    
+    
 }
 
 .calender header {
@@ -320,7 +322,7 @@ article.caption {
     left: 50%;
     border-style: solid;
     border-width: 0.25em 0.25em 0 0;
-    border-color: #ccc;
+    border-color: #244435;
     transform: translate(-50%, -50%);
 }
 
