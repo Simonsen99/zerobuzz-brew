@@ -236,6 +236,35 @@ article.caption {
     flex-direction: row;
 }
 
+/*Styling af aroma adventure*/
+.aroma-content h1 {
+    margin-left: 11.3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.aroma-content p {
+    margin-left: 11.3%;
+    margin-bottom: 2%;
+    margin-right: 11%;
+}
+
+.aroma-content ul {
+    margin-left: 15%;
+    margin-bottom: 2%;
+    margin-right: 11%;
+    margin-top: -37%;
+    
+}
+
+.glas {
+    display: flex;
+    justify-content: end;
+    margin-right: 15%;
+    margin-top: -5%;
+    
+}
+
 /* Styling af footer*/
 footer {
     position: relative;
