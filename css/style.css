@@ -153,8 +153,6 @@ margin-left: 6rem;
 }
 
 
-
-
 /*Styling af populære øl*/
 h2.product-category {
     display: flex;
@@ -607,4 +605,17 @@ footer .footer p{
     }
 }
 
+#main_menu_mobile {
+    display: none;
+}
+
+@media (max-width:768px){
+    #main_menu {
+        display: none;
+    }
+
+    #main_menu_mobile {
+        display: block;
+    }
+}
 
