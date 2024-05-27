@@ -612,17 +612,8 @@ footer .footer p{
     }
 }
 
-#main_menu_mobile {
-    display: none;
-}
+@media (max-width: 430px){
+    
 
-@media (max-width:768px){
-    #main_menu {
-        display: none;
-    }
-
-    #main_menu_mobile {
-        display: block;
-    }
 }
 

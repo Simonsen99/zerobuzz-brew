@@ -20,6 +20,7 @@
             <a href="#"><img src="img/nytlogo.webp" alt="Logo"></a>
         </section>
 
+        <div class="menuToggle"></div>
         <section class="inner_main_menu">
             <ul>
                 <li><a href="øluniverset.html">Øluniverset</a>
@@ -84,7 +85,7 @@
 
     <article class="caption">
         <h2>Den du ved nok</h2>
-        <h2>Solskinspilsner</h2>
+        <h2>Solskinspilsneren</h2>
         <h2>Julepilsneren</h2>
     </article>
 </section>
@@ -131,6 +132,14 @@
         </article>
     </section>
 </footer>
+
+<script>
+    let menuToggle = document.querySelector('.menuToggle');
+    let header = document.querySelector ('header');
+    menuToggle.onclick = function(){
+        header.classList.toggle('active');
+    }
+</script>
 
 
 </body>
