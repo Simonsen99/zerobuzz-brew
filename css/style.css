@@ -328,6 +328,12 @@ article.caption {
     margin: 2em;
 }
 
+section.dropdown {
+    display: flex;
+    justify-content: center;
+    margin-top: -6.5%;
+}
+
 .dropdown * {
     box-sizing: border-box;
 }
@@ -335,6 +341,7 @@ article.caption {
 .select {
     background: #244436;
     color: #EEEFE9;
+    width: 14%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -402,6 +409,10 @@ article.caption {
 .menu-open {
     display: block;
     opacity: 1;
+}
+
+ul.menu.menu-open {
+    width: 14.2%;
 }
 
 /*Styling af aroma adventure*/
