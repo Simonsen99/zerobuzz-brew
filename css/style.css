@@ -547,6 +547,7 @@ footer .footer h2::before { /* Sætter streger under h2*/
 
 footer .footer p{
     color: #EEEFE9;
+    line-height: 25px;
 }
 
 .soMe {
