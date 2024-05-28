@@ -61,7 +61,7 @@ body
     top: 40px;
     left: 0;
     width: 200px;
-    background: #244436;;
+    background: #244436;
     padding: 0;
     display: none;
 }
@@ -115,6 +115,33 @@ body
     color: #244436;
 }
 
+.sidebar li ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    background: #244436;
+    padding: 0;
+    display: none;
+}
+
+.sidebar li:hover ul {
+    display: block;
+    position: static;
+    padding: 0;
+    background: #244436;
+} 
+
+.sidebar li ul li {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar li ul li a{
+    color: #244436;
+    font-size: 15px;
+}
 
 
 
