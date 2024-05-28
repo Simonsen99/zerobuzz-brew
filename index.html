@@ -6,6 +6,7 @@
     <title>Zero Buzz Brew</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slicknav.min.css"> 
     <script src="https://kit.fontawesome.com/d79f8e95bd.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
 
         <div class="menuToggle"></div>
         <section class="inner_main_menu">
-            <ul>
+            <ul id="menu">
                 <li><a href="øluniverset.html">Øluniverset</a>
                     <ul>
                         <li><a href="pilsner.html">Pilsner</a></li>
@@ -133,14 +134,12 @@
     </section>
 </footer>
 
-<script>
-    let menuToggle = document.querySelector('.menuToggle');
-    let header = document.querySelector ('header');
-    menuToggle.onclick = function(){
-        header.classList.toggle('active');
-    }
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="scripts/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#menu').slicknav();
+    });
 </script>
-
-
 </body>
 </html>

@@ -14,12 +14,13 @@ body
 
 .inner_main_menu {
     margin: 0 auto;
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
 }
 
 .inner_main_menu ul {
     margin: 0;
-    padding: 80px;
+    padding: 80px 20px;
     list-style: none;
     text-align: right;
 }
@@ -84,6 +85,26 @@ body
 .inner_main_menu ul li ul li a:hover {
     background-color: #EEEFE9;
     color: #244436;
+}
+
+
+.slicknav_menu {
+    font-size: 16px;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    z-index: 99999;
+    width: 100%;
+    display: none;
+}
+
+
+ul.slicknav_nav {
+    width: 80%;
+    top: 0;
+    background: #244436 none repeat scroll 0 0;
+    position: absolute;
+    left: 0;
 }
 
 #main_menu {
@@ -615,8 +636,14 @@ footer .footer p{
     }
 }
 
-@media (max-width: 430px){
-    
+/* Til mobil */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slicknav_menu {
+        display: block;
+    }
 
+    .inner_main_menu {
+        display: none;
+    }
 }
 
