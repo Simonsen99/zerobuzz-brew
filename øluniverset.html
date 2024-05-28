@@ -18,44 +18,83 @@
 </head>
 <body>
 <!-- Kodning af navbar-->
-    <nav id="main_menu">
-        <section class="logo_area">
-            <a href="index.html"><img src="img/nytlogo.webp" alt="Logo"></a>
-        </section>
+<nav id="main_menu">
+    <section class="logo_area">
+        <a href="index.html"><img src="img/nytlogo.webp" alt="Logo"></a>
+    </section>
 
-        <section class="inner_main_menu">
-            <ul>
-                <li><a href="øluniverset.html">Øluniverset</a>
-                    <ul>
-                        <li><a href="pilsner.html">Pilsner</a></li>
-                        <li><a href="#">Classic</a></li>
-                        <li><a href="#">IPA</a></li>
-                        <li><a href="#">Fruity Fusion</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Forhandlere</a>
-                    <ul>
-                        <li><a href="#">Caféer</a></li>
-                        <li><a href="#">Barer</a></li>
-                        <li><a href="#">Restauranter</a></li>
-                        <li><a href="supermarked.html">Supermarkeder</a></li>
-                    </ul>                
-                </li>
-                <li><a href="#">Events</a>
-                    <ul>
-                        <li><a href="aromaAdventure.html">Aroma Adventure</a></li>
-                        <li><a href="#">Flavor Expedition</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Om bryghuset</a>
-                    <ul>
-                        <li><a href="#">Historie</a></li>
-                        <li><a href="#">Det klare valg</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </nav>
+    <aside>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="øluniverset.html">Øluniverset</a>
+                <ul>
+                    <li><a href="pilsner.html">Pilsner</a></li>
+                    <li><a href="#">Classic</a></li>
+                    <li><a href="#">IPA</a></li>
+                    <li><a href="#">Fruity Fusion</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Forhandlere</a>
+                <ul>
+                    <li><a href="#">Caféer</a></li>
+                    <li><a href="#">Barer</a></li>
+                    <li><a href="#">Restauranter</a></li>
+                    <li><a href="supermarked.html">Supermarkeder</a></li>
+                </ul>                
+            </li>
+            <li><a href="#">Events</a>
+                <ul>
+                    <li><a href="aromaAdventure.html">Aroma Adventure</a></li>
+                    <li><a href="#">Flavor Expedition</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Om bryghuset</a>
+                <ul>
+                    <li><a href="#">Historie</a></li>
+                    <li><a href="#">Det klare valg</a></li>
+                </ul>
+            </li>
+    
+        </ul>
+    </aside>
+
+
+
+    <section class="inner_main_menu">
+        <ul id="menu">
+            <li><a href="øluniverset.html">Øluniverset</a>
+                <ul>
+                    <li><a href="pilsner.html">Pilsner</a></li>
+                    <li><a href="#">Classic</a></li>
+                    <li><a href="#">IPA</a></li>
+                    <li><a href="#">Fruity Fusion</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Forhandlere</a>
+                <ul>
+                    <li><a href="#">Caféer</a></li>
+                    <li><a href="#">Barer</a></li>
+                    <li><a href="#">Restauranter</a></li>
+                    <li><a href="supermarked.html">Supermarkeder</a></li>
+                </ul>                
+            </li>
+            <li><a href="#">Events</a>
+                <ul>
+                    <li><a href="aromaAdventure.html">Aroma Adventure</a></li>
+                    <li><a href="#">Flavor Expedition</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Om bryghuset</a>
+                <ul>
+                    <li><a href="#">Historie</a></li>
+                    <li><a href="#">Det klare valg</a></li>
+                </ul>
+            </li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </section>
+</nav>
 
 <!--Kodning af content-->
     <section class="øluniverset">
@@ -132,6 +171,18 @@
         </article>
     </section>
 </footer>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
     
 </body>
 </html>
