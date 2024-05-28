@@ -87,25 +87,36 @@ body
     color: #244436;
 }
 
-
-.slicknav_menu {
-    font-size: 16px;
-    padding: 5px;
+.sidebar {
     position: fixed;
-    right: 0;
-    z-index: 99999;
-    width: 100%;
-    display: none;
-}
-
-
-ul.slicknav_nav {
-    width: 80%;
     top: 0;
-    background: #244436 none repeat scroll 0 0;
-    position: absolute;
-    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #EEEFE9;
+    box-shadow: -10px 0 10px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
 }
+
+.sidebar li {
+    padding: 10px;
+    margin-top: 10px;
+    list-style: none;
+    
+}
+
+.sidebar li a{
+    text-decoration: none;
+    color: #244436;
+}
+
+
+
 
 #main_menu {
     width: 100%;
@@ -500,7 +511,6 @@ article.caption {
 }
 
 
-
 /* Styling af footer*/
 footer {
     position: relative;
@@ -636,14 +646,20 @@ footer .footer p{
     }
 }
 
+
+
 /* Til mobil */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .slicknav_menu {
-        display: block;
-    }
-
     .inner_main_menu {
         display: none;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .menu-button i {
+        display: block;
     }
 }
 
