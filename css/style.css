@@ -12,6 +12,7 @@ body
     font-family: 'Montserrat', sans-serif;
 }
 
+/*Styler nav-bar*/
 .inner_main_menu {
     margin: 0 auto;
     width: 100%;
@@ -38,7 +39,6 @@ body
 .inner_main_menu ul li:nth-child(2) {
     float: left;
 }
-
 
 
 .inner_main_menu ul li a {
@@ -86,7 +86,7 @@ body
     background-color: #EEEFE9;
     color: #244436;
 }
-
+/*Styler sidebar*/
 .sidebar {
     position: fixed;
     top: 0;
@@ -142,7 +142,6 @@ body
     color: #244436;
     font-size: 15px;
 }
-
 
 
 #main_menu {
@@ -346,10 +345,6 @@ article.caption {
     transition: 0.3s;
 }
 
-.select-clicked {
-    border: 2px blue solid;
-    box-shadow: 0 0 0.8em green;
-}
 
 .select:hover {
     background: #EEEFE9;
@@ -372,11 +367,11 @@ article.caption {
 .menu {
     list-style: none;
     padding: 0.2em 0.5em;
-    background: pink;
+    background: #EEEFE9;
     border: 1px #363a43 solid;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
     border-radius: 0.5em;
-    color: #9fa5b5;
+    color: #244436;
     position: absolute;
     top: 3em;
     left: 50%;
@@ -400,7 +395,8 @@ article.caption {
 }
 
 .active {
-    background: black;
+    background: #244436;
+    color: #EEEFE9;
 }
 
 .menu-open {
