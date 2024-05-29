@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Her finder du det bredeste udvalg af alkoholfri øl">
+    <meta name="keywords" content="alkoholfri øl, alkoholfri, øl, pilsner, classic, IPA, fruity fusion, den du ved nok, Solskinspilsner, julepilsner">
+    <meta name="author" content="Carina Simonsen">
+
     <title>Øluniverset</title>
 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d79f8e95bd.js" crossorigin="anonymous"></script>
-
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,9 +113,37 @@
         <h2>Filtrer:</h2>
     </section>
 
+    <section class="dropdown" >
+        <div class="select">
+            <span class="selected">Årstid</span>
+            <div class="caret"></div>
+        </div>
+    
+        <ul class="menu">
+            <li>Vinter</li>
+            <li>Forår</li>
+            <li class="active">Sommer</li>
+            <li>Efterår</li>
+        </ul>
+    </section>
+
+    <section class="dropdown" >
+        <div class="select">
+            <span class="selected">Variant</span>
+            <div class="caret"></div>
+        </div>
+    
+        <ul class="menu">
+            <li class="active">Pilsner</li>
+            <li>Classic</li>
+            <li>IPA</li>
+            <li>Fruity Fusion</li>
+        </ul>
+    </section>
+
 <!--Kodning af billeder-->
 <section class="product">
-    <h2 class="product-category"><a href="pilsner.html">Pilsner</a></h2>
+    <h2><a href="pilsner.html">Pilsner</a></h2>
     
     <article class="product-img">
         <img src="img/pils1.webp" alt="Den du ved nok">
@@ -171,7 +202,7 @@
         </article>
     </section>
 </footer>
-
+<script src="scripts/dropdowns.js" defer></script>
 <script>
     function showSidebar(){
         const sidebar = document.querySelector('.sidebar')
