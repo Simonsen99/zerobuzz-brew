@@ -428,6 +428,11 @@ ul.menu.menu-open {
     margin-right: 11%;
 }
 
+.aroma-content h3 {
+    margin-left: 11.3%;
+    padding: 9px;
+}
+
 .aroma-content ul {
     margin-left: 15%;
     margin-bottom: 2%;
@@ -544,13 +549,19 @@ ul.menu.menu-open {
     color: #ccc;
 }
 
+h3 {
+    margin-left: 11.3%;
+    padding: 9px;
+
+}
 .knap {
-    height: 10vh;
+    height: 20vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    align-items: left;
+    justify-content: left;
+    margin-left: 11.3%;
+    }
 
 .wrapper {
     height: 50px;
